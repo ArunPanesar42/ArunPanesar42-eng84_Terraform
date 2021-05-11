@@ -57,12 +57,19 @@ provider "aws"{
 }
 
 ```
-
+## CI/CD Tools
+![tools](https://github.com/ArunPanesar42/ArunPanesar42-eng84_Terraform/blob/main/Diagrams/CICD%20tools.png?raw=true)
 ## Clouds
 There are many different types of clouds. 
 
-### Public vs Private vs Hybrid Cloud 
+### Public vs Private vs Hybrid Cloud
+#### Diagram 
+- Here is a diagram which shows thhe different types of clouds 
+![cloud_diagram_ofeach](https://github.com/ArunPanesar42/ArunPanesar42-eng84_Terraform/blob/main/Diagrams/public-private-hybrid-clouds.png?raw=true)
+#### Explaination 
+- Here is an explaination for the dofference between clouds 
 
+- ![explaination_clouds](https://github.com/ArunPanesar42/ArunPanesar42-eng84_Terraform/blob/main/Diagrams/public_private_hybrid_cloud.png?raw=true)
 
 ### Hybrid Cloud 
 
