@@ -26,7 +26,7 @@ provider "aws"{
 
 #### Hybrid clouds
 
-
+![hybrid_cloud](https://github.com/ArunPanesar42/ArunPanesar42-eng84_Terraform/blob/main/Diagrams/Hybrid%20clouds.jpg?raw=true)
 
 
 
