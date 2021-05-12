@@ -13,7 +13,12 @@ The key features of Terraform are:
 - Change Automation: Complex changesets can be applied to your infrastructure with minimal human interaction. With the previously mentioned execution plan and resource graph, you know exactly what Terraform will change and in what order, avoiding many possible human errors.
 
 ## Benefits of Terraform 
-
+- Cloud independent - works with different cloud providers, allowing for multi-cloud configuration
+- Can effectively scale up/down to meet the current load
+- Reduced time to provision
+- Ease of use
+- Concise - a lot of background processes are occurring, more concise than Ansible
+- Always keeping up-to-date
 
 ## Terraform most used commands 
 - `terraform init` = initialises Terraform with the dependencies of the provider mentioned in main.tf
@@ -58,6 +63,7 @@ provider "aws"{
 
 ```
 ## CI/CD Tools
+- Here are some tools we can use for 
 ![tools](https://github.com/ArunPanesar42/ArunPanesar42-eng84_Terraform/blob/main/Diagrams/CICD%20tools.png?raw=true)
 ## Clouds
 There are many different types of clouds. 
@@ -72,7 +78,7 @@ There are many different types of clouds.
 - ![explaination_clouds](https://github.com/ArunPanesar42/ArunPanesar42-eng84_Terraform/blob/main/Diagrams/public_private_hybrid_cloud.png?raw=true)
 
 ### Hybrid Cloud 
-
+- This is an example of an hybrid cloud 
 ![hybrid_cloud](https://github.com/ArunPanesar42/ArunPanesar42-eng84_Terraform/blob/main/Diagrams/Hybrid%20clouds.jpg?raw=true)
 
 
