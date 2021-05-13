@@ -1,11 +1,7 @@
-# Let's initialise terraform
-# Providers?
-# AWS
-
+# Here is how we deploy our website with terraform 
+# Our Provider is AWS
 # This code will eventually launch an EC2 instance for us
-
 # provider is a keyword in Terraform to define the name of cloud provider
-
 
 # Syntax:
 # Resource is the key word that allows us to add aws resource as task in application
@@ -23,7 +19,7 @@ resource "aws_vpc" "arun_terraform_vpc"{
  instance_tenancy = "default"
 
  tags = {
-   Name = "${var.aws_vpc}"
+   Name = var.aws_vpc
  }
 }
 
@@ -69,7 +65,7 @@ resource "aws_subnet" "arun_terraform_public_subnet" {
   availability_zone = "eu-west-1a"
 
   tags = {
-    Name = "${var.aws_subnet_public}"
+    Name = var.aws_subnet_public
   }
 }
 # Private
@@ -79,7 +75,7 @@ resource "aws_subnet" "arun_terraform_private_subnet" {
   availability_zone = "eu-west-1a"
 
   tags = {
-    Name = "${var.aws_subnet_private}"
+    Name = var.aws_subnet_private
   }
 }
 
@@ -184,7 +180,7 @@ resource "aws_instance" "db_instance"{
 
   # Tags is to give name to our instance
   tags = {
-    Name = "${var.aws_db}"
+    Name = var.aws_db
   }
 }
 
@@ -211,7 +207,7 @@ resource "aws_instance" "app_instance"{
 
   # Tags is to give name to our instance
   tags = {
-    Name = "${var.aws_webapp}"
+    Name = var.aws_webapp
   }
 
   provisioner "file" {
