@@ -1,40 +1,28 @@
 # creating variables to apply DRY using Terraform variable.tf
 # These variables can be called in our main.tf
+######################################################################
 
+# Creating variables to apply DRY using Terraform variable.tf
+# These variables can be called in our main.tf
 
-# # VPC
-# variable "vpc_id" {
-#   default = "vpc-08affaf5f68bdfbbc"
-# }
+# ************** AMI *******************
 
-
-
-# AMIs For Terraform
 variable "webapp_ami_id" {
   default = "ami-0f852bb43834ab266"
 }
 
-variable "webdb_ami_id" {
+variable "db_ami_id" {
   default = "ami-0fb639115a3aa1aae"
 }
 
+# ----- NAMES -----
 
-
-# Names
 variable "aws_vpc" {
   default = "eng84_arun_terraform_vpc"
 }
 
-variable "webapp_ami" {
-  default = "eng84_arun_terraform_app"
-}
-
-variable "db_name" {
-  default = "eng84_arun_terraform_db"
-}
-
-variable "aws_subnet" {
-  default = "eng84_arun_terraform_subnet"
+variable "aws_subnet_public" {
+  default = "eng84_arun_terraform_public_subnet"
 }
 
 variable "aws_subnet_private" {
@@ -61,9 +49,15 @@ variable "aws_private_sg"{
   default = "eng84_arun_terraform_private_sg"
 }
 
-# *********** IPs ******************
+variable "aws_webapp" {
+  default = "eng84_arun_terraform_nodeapp"
+}
 
-# 
+variable "aws_db" {
+  default = "eng84_arun_terraform_db"
+}
+
+# ----- IP -----
 
 variable "aws_vpc_cidr" {
   default = "21.21.0.0/16"
@@ -90,12 +84,12 @@ variable "db_ip"{
 }
 
 
+# ----- Key -----
 
-#************* Keys *************** 
-variable "aws_key_name" {
+variable "key" {
   default = "eng84devops"
 }
 
-variable "aws_key_path" {
+variable "key_path" {
   default = "~/.ssh/eng84devops.pem"
 }
