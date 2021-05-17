@@ -18,43 +18,43 @@ variable "db_ami_id" {
 # NAMES OF VARIABLES ###############################################
 
 variable "aws_vpc" {
-  default = "eng84_arun_terraform_vpc"
+  default = "eng84_arun_terraform_asg_vpc"
 }
 
 variable "aws_subnet_public" {
-  default = "eng84_arun_terraform_public_subnet"
+  default = "eng84_arun_terraform_asg_public_subnet"
 }
 
 variable "aws_subnet_private" {
-  default = "eng84_arun_terraform_private_subnet"
+  default = "eng84_arun_terraform_asg_private_subnet"
 }
 
 variable "aws_igw"{
-  default = "eng84_arun_terraform_igw"
+  default = "eng84_arun_terraform_asg_igw"
 }
 
 variable "aws_public_rt"{
-  default = "eng84_arun_terraform_rt_public"
+  default = "eng84_arun_terraform_asg_rt_public"
 }
 
 variable "aws_private_rt"{
-  default = "eng84_arun_terraform_rt_private"
+  default = "eng84_arun_terraform_asg_rt_private"
 }
 
 variable "aws_public_sg"{
-  default = "eng84_arun_terraform_public_sg"
+  default = "eng84_arun_terraform_asg_public_sg"
 }
 
 variable "aws_private_sg"{
-  default = "eng84_arun_terraform_private_sg"
+  default = "eng84_arun_terraform_asg_private_sg"
 }
 
 variable "aws_webapp" {
-  default = "eng84_arun_terraform_webapp"
+  default = "eng84_arun_terraform_asg_webapp"
 }
 
 variable "aws_db" {
-  default = "eng84_arun_terraform_db"
+  default = "eng84_arun_terraform_asg_db"
 }
 
 # IPs and CIDR #################################################
@@ -71,8 +71,16 @@ variable "aws_private_cidr" {
   default = "21.21.8.0/24"
 }
 
+variable "aws_public_2_cidr" {
+  default = "21.21.9.0/24"
+}
+
+variable "aws_public_3_cidr" {
+  default = "21.21.10.0/24"
+}
+
 variable "my_ip"{
-  default = "82.14.6.128/32"
+  default = "xxxxxx/32"
 }
 
 variable "webapp_ip"{
